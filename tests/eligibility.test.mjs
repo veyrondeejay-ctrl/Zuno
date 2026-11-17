@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {zunoPolicy,candidateModels,eligibleRoutes,validateAskBody} from '../server/eligibility.mjs';
+const now=1800000000000,context={now,ageBand:'9-11',remainingChildRequests:5,remainingGlobalRequests:10};
+const record={id:'test/model:free',provider:'openrouter',enabled:true,accountFreeVerified:true,childUseVerified:true,commercialUseVerified:true,safetyPassed:true,noTraining:true,zeroRetention:true,allowedAgeBands:['9-11'],promptPrice:0,completionPrice:0,otherCharges:0,quotaRemaining:5,verifiedUntil:now+86400000,evidence:['test evidence']};
+test('live AI and paid calls are disabled by default',()=>{assert.equal(zunoPolicy.liveAIEnabled,false);assert.equal(zunoPolicy.allowPaid,false);assert.deepEqual(eligibleRoutes(candidateModels,context),[])});
+test('an exact reviewed free record can pass, without enabling the service',()=>{assert.equal(eligibleRoutes([record],context).length,1);assert.equal(zunoPolicy.liveAIEnabled,false)});
+test('each eligibility gate fails closed',()=>{for(const key of ['enabled','accountFreeVerified','childUseVerified','commercialUseVerified','safetyPassed','noTraining','zeroRetention'])assert.deepEqual(eligibleRoutes([{...record,[key]:false}],context),[],key)});
+test('unknown or nonzero prices cannot pass',()=>{for(const val of [undefined,null,'0',.00001,-1])assert.deepEqual(eligibleRoutes([{...record,promptPrice:val}],context),[])});
+test('expiry, retirement and wrong age are refused',()=>{assert.deepEqual(eligibleRoutes([{...record,verifiedUntil:now}],context),[]);assert.deepEqual(eligibleRoutes([{...record,retiresAt:now+5*86400000}],context),[]);assert.deepEqual(eligibleRoutes([{...record,allowedAgeBands:['12-14']}],context),[])});
+test('exhausted child, global or provider quotas block routing',()=>{assert.deepEqual(eligibleRoutes([record],{...context,remainingChildRequests:0}),[]);assert.deepEqual(eligibleRoutes([record],{...context,remainingGlobalRequests:0}),[]);assert.deepEqual(eligibleRoutes([{...record,quotaRemaining:0}],context),[])});
+test('Gemini and paid OpenRouter IDs stay blocked despite flags',()=>{assert.deepEqual(eligibleRoutes([{...record,provider:'gemini'}],context),[]);assert.deepEqual(eligibleRoutes([{...record,id:'test/model'}],context),[])});
+test('clients cannot inject routing, system messages or a paid switch',()=>{for(const key of ['model','provider','messages','ageBand','allowPaid','system'])assert.throws(()=>validateAskBody({question:'Why is Mars red?',requestId:'test-12345',[key]:'untrusted'}));assert.deepEqual(validateAskBody({question:' Why is Mars red? ',topicId:'mars',requestId:'test-12345'}),{question:'Why is Mars red?',topicId:'mars',requestId:'test-12345'})});

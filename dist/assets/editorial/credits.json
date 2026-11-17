@@ -1,0 +1,234 @@
+{
+  "solar-system": {
+    "src": "/assets/editorial/solar-system.webp",
+    "alt": "Solar System",
+    "credit": "Omarius257",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Solar_System_True_Color_EN.png",
+    "generated": false
+  },
+  "mars": {
+    "src": "/assets/editorial/mars.webp",
+    "alt": "Mars",
+    "credit": "Kevin Gill from Los Angeles, CA, United States",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png",
+    "generated": false
+  },
+  "sun": {
+    "src": "/assets/editorial/sun.webp",
+    "alt": "Sun",
+    "credit": "Matúš Motlo",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Sun_in_white_light.jpg",
+    "generated": false
+  },
+  "rift-valley": {
+    "src": "/assets/editorial/rift-valley.webp",
+    "alt": "Great Rift Valley",
+    "credit": "Val Rime",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tectonic_African_Arabian_Rift_System.jpg",
+    "generated": false
+  },
+  "water-cycle": {
+    "src": "/assets/editorial/water-cycle.webp",
+    "alt": "Cloud",
+    "credit": "NASA/Expedition 40 crew member",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:ISS-40_Thunderheads_near_Borneo.jpg",
+    "generated": false
+  },
+  "ai": {
+    "src": "/assets/editorial/ai.webp",
+    "alt": "Boe Bot",
+    "credit": "Jeffrey Avery from Las Vegas, US",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boe_Bot.jpg",
+    "generated": false
+  },
+  "coral": {
+    "src": "/assets/editorial/coral.webp",
+    "alt": "Coral reef",
+    "credit": "Richard Ling <wikipedia@rling.com>",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_Linckia_Starfish.JPG",
+    "generated": false
+  },
+  "wangari": {
+    "src": "/assets/editorial/wangari.webp",
+    "alt": "Wangari Maathai",
+    "credit": "Kingkongphoto & www.celebrity-photos.com from Laurel  Maryland, USA",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_2001.jpg",
+    "generated": false
+  },
+  "patterns": {
+    "src": "/assets/editorial/patterns.webp",
+    "alt": "Closeup of field sunflower",
+    "credit": "John Seb Barber",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Closeup_of_field_sunflower.jpg",
+    "generated": false
+  },
+  "fractions": {
+    "src": "/assets/editorial/fractions.webp",
+    "alt": "Pizza",
+    "credit": "igorovsyannykov",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pizza-3007395.jpg",
+    "generated": false
+  },
+  "internet": {
+    "src": "/assets/editorial/internet.webp",
+    "alt": "Ethernet switch 2",
+    "credit": "Deavmi",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ethernet_switch_2.jpg",
+    "generated": false
+  },
+  "sensors": {
+    "src": "/assets/editorial/sensors.webp",
+    "alt": "Weather station",
+    "credit": "Longhair at English Wikipedia",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Mildura_Airport_Weatherstation.jpg",
+    "generated": false
+  },
+  "data": {
+    "src": "/assets/editorial/data.webp",
+    "alt": "- Thermometer -",
+    "credit": "User:Nino Barbieri",
+    "license": "CC BY 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:-_Thermometer_-.jpg",
+    "generated": false
+  },
+  "online-safety": {
+    "src": "/assets/editorial/online-safety.webp",
+    "alt": "Computer keyboard",
+    "credit": "NotFromUtrecht",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Typing_example.ogv",
+    "generated": false
+  },
+  "electricity": {
+    "src": "/assets/editorial/electricity.webp",
+    "alt": "Incandescent light bulb",
+    "credit": "KMJ, alpha masking by Edokter",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Gluehlampe_01_KMJ.png",
+    "generated": false
+  },
+  "solar-energy": {
+    "src": "/assets/editorial/solar-energy.webp",
+    "alt": "Photovoltaic power station",
+    "credit": "Parabel GmbH",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Solarpark_J%C3%A4nnersdorf.jpg",
+    "generated": false
+  },
+  "wow-venus": {
+    "src": "/assets/editorial/wow-venus.webp",
+    "alt": "Venus",
+    "credit": "NASA/JPL-Caltech",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Venus_from_Mariner_10.jpg",
+    "generated": false
+  },
+  "wow-butterfly": {
+    "src": "/assets/editorial/wow-butterfly.webp",
+    "alt": "Papilio polytes",
+    "credit": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Common_mormon_(Papilio_polytes_romulus)_female_form_stichius_Kuang_Si.jpg",
+    "generated": false
+  },
+  "wow-rainbow": {
+    "src": "/assets/editorial/wow-rainbow.webp",
+    "alt": "Rainbow",
+    "credit": "Eric Rolph at English Wikipedia",
+    "license": "CC BY-SA 2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Double-alaskan-rainbow.jpg",
+    "generated": false
+  },
+  "kenya-photo": {
+    "src": "/assets/editorial/kenya-photo.webp",
+    "alt": "Mount Kenya",
+    "credit": "Don Elvis Muraya",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:MtKenya.jpg",
+    "generated": false
+  },
+  "elephants": {
+    "src": "/assets/editorial/elephants.webp",
+    "alt": "African elephant reaching its trunk towards acacia leaves",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "rhinos": {
+    "src": "/assets/editorial/rhinos.webp",
+    "alt": "Black rhino browsing leaves with its pointed upper lip",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "rain-story": {
+    "src": "/assets/editorial/rain-story.webp",
+    "alt": "Children investigating a rain gauge in a school garden",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "robot-story": {
+    "src": "/assets/editorial/robot-story.webp",
+    "alt": "Children testing a homemade rover on a floor grid",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "library-story": {
+    "src": "/assets/editorial/library-story.webp",
+    "alt": "Children sharing books in a neighbourhood reading corner",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "chapati-story": {
+    "src": "/assets/editorial/chapati-story.webp",
+    "alt": "A grandmother and children sharing chapati portions",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "bridge-story": {
+    "src": "/assets/editorial/bridge-story.webp",
+    "alt": "Children testing a folded-paper bridge with a toy beetle",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "seed-story": {
+    "src": "/assets/editorial/seed-story.webp",
+    "alt": "Children observing seedlings and keeping garden notes",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "kite-story": {
+    "src": "/assets/editorial/kite-story.webp",
+    "alt": "Children mending a colourful kite",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "sound-story": {
+    "src": "/assets/editorial/sound-story.webp",
+    "alt": "Children listening and drawing a sound map outdoors",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "repair-story": {
+    "src": "/assets/editorial/repair-story.webp",
+    "alt": "A community repair workshop with a toy truck",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  },
+  "shadow-story": {
+    "src": "/assets/editorial/shadow-story.webp",
+    "alt": "Children investigating the shadow of a stick",
+    "credit": "ZUNO editorial illustration",
+    "generated": true
+  }
+}

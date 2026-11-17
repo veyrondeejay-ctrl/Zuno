@@ -1,0 +1,10 @@
+// Honest local conversation handling. These replies do not use a live model.
+export function conversationReply(question,age='9-11'){
+ const q=String(question||'').trim().toLowerCase().replace(/[.!?,]+$/,'');
+ if(/^(hi|hello|hey|hiya|jambo|habari|hujambo|sasa|hello zuno|hi zuno|hey zuno)$/.test(q))return {label:'Ready to wonder',answer:age==='6-8'?'Hello! I’m Zuno AI. What would you like to discover? We could meet the planets, find out about animals, or play with numbers.':age==='12-14'?'Hey! What question or idea would you like to explore?':'Hello! What are you curious about today?',prompts:['Why is Mars red?','What is an algorithm?','Where does rain come from?']};
+ if(/^(thanks|thank you|thank you zuno|asante|asante sana|cheers)$/.test(q))return {label:'You’re welcome!',answer:'You’re welcome! Keep that question-asking spark. Want to follow another idea?',prompts:['How do elephants use their trunks?','What is an algorithm?']};
+ if(/^(who are you|what are you|what is zuno|who is zuno)$/.test(q))return {label:'Meet Zuno',answer:'I’m Zuno AI, powered by ClerkOps, a learning helper inside ZUNO KIDS. I’m software, here to explain ideas and explore questions with you. You can read stories, investigate worlds and try learning games.',prompts:['Why is Mars red?','Where does rain come from?']};
+ if(/^(help|what can you do|how does this work|how do i use this|what can i ask|what should i ask)$/.test(q))return {label:'Let’s find a starting point',answer:'Ask about space, animals, water, Kenya, coding or the internet. You can say “Tell me more” after a library answer. For numbers, words and puzzles, try Play. I can also help with explanations and safe creative ideas.',prompts:['What is an algorithm?','Why is Mars red?','How do elephants use their trunks?']};
+ if(/^(bye|goodbye|good night|kwaheri|see you)$/.test(q))return {label:'See you, explorer',answer:'See you next time! There’s always another little wonder waiting. Taking a break is a good idea too.',prompts:[]};
+ return null;
+}

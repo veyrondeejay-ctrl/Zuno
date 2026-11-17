@@ -1,0 +1,5 @@
+Kenya county boundaries: geoBoundaries gbOpen. Sources: RCMRD GeoPortal, Africa GeoPortal.
+Boundary licence reported by geoBoundaries: Public Domain.
+47 units; simplified geometry. Retrieved 2026-11-15.
+Source: https://www.geoboundaries.org/api/current/gbOpen/KEN/ADM1/
+Learning map, not a survey or navigation map.
